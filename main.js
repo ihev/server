@@ -43,7 +43,7 @@
   // HTTP request listener
   const httpRequestHandler = (req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end("'Hello from HTTP\n'");
+    res.end('Hello from HTTP\n');
   }
 
   // HTTPS request listener
