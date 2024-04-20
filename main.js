@@ -30,8 +30,10 @@
 
   // Initialize the WebSocket server independently
   const initWebSocket = async () => {
-    const ws = await import('ws');
-    const server = new ws.WebSocketServer({ port: WS_PORT });
+
+    const WebSocketServer = require('./libs/ws/websocket-server');
+    const server = new WebSocketServer({ port: WS_PORT });
+    
     server.on('connection', socket => {
       socket.on('message', message => wsMessageHandler(message, socket));
       socket.send('Welcome to WebSocket server!');
