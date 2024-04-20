@@ -1,3 +1,13 @@
+  /**
+ * Server Initialization
+ * Author: Evgenii Khizhniakov
+ * Email: ihevol@gmail.com
+ * 
+ * This file contains the initialization of HTTP, HTTPS, and WebSocket servers.
+ * It handles basic network communications for the application, setting up servers
+ * on specified ports with necessary security configurations.
+ */
+
   const HTTP_PORT = process.env.HTTP_PORT || 8080;
   const HTTPS_PORT = process.env.HTTPS_PORT || 8443;
   const WS_PORT = process.env.WS_PORT || 8081;
